@@ -1,6 +1,56 @@
-frontend-nanodegree-arcade-game
-===============================
+# Arcade Game "Frogger"
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+## Table of Contents
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+* [Description](#description)
+* [Instructions](#instructions)
+* [Getting Started](#getting-started)
+* [Contributing](#contributing)
+
+## Description
+
+The Arcade Game 'Frogger' is an interactive game, where the player - the pink-haired character at the bottom of the canvas - needs to make her way to the water without running into the enemy bugs. These bugs run across the path in varying speeds, which makes the crossing difficult. At the point of collision, the player is reset to her initial position.
+
+## Instructions
+
+
+Move the player with the arrow keys 'up', 'down', 'left' and 'right'.
+
+The goal is to reach the water without running into the bug enemies.
+
+
+
+## Getting started
+
+### Installing
+
+The game can be accessed by clicking the following link: https://christinereffo.github.io/.
+
+The code can be accessed, forked and cloned here:
+https://github.com/ChristineReffo/frontend-nanodegree-arcade-game
+
+### Dependencies
+
+This game is built with the following code dependencies:
+1. ES6
+
+
+## Contributing
+
+This is a Udacity student project. Contributors are welcome to send pull requests, which will be considered once the project has been reviewed and it passed all requirements.
+
+
+### Author
+
+Original code structure: Udacity  
+Javascript app.js: Christine Reffo
+
+
+### License
+
+This project is not licensed.
+
+
+### Acknowledgments
+
+Udacity
