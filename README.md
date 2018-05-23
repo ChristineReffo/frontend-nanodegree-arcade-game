@@ -24,10 +24,11 @@ The goal is to reach the water without running into the bug enemies.
 
 ### Installing
 
-The game can be accessed by clicking the following link: https://christinereffo.github.io/.
 
 The code can be accessed, forked and cloned here:
 https://github.com/ChristineReffo/frontend-nanodegree-arcade-game
+
+The index.html file needs to be opened in a browser to play the game
 
 ### Dependencies
 
