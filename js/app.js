@@ -3,7 +3,7 @@ class Enemy {
   constructor(y) {
     this.x = -20; //looks smoother for bugs to crawl in rather than appear at this.x = 0
     this.y = y;
-    this.speed = Math.random() * (420 - 70) + 70;
+    this.speed = Math.random() * (300 - 70) + 70;
     this.sprite = 'images/enemy-bug.png';
     this.width = 50;
     this.height = 30;
@@ -17,7 +17,7 @@ class Enemy {
 
     if (this.x > 450) { //allow bugs to run off screen instead of just disappearing
       this.x = -20;
-      this.speed = Math.random() * (440 - 70) + 70; // reassign random speed
+      this.speed = Math.random() * (300 - 70) + 70; // reassign random speed
     }
     // scenario ---> collision with player; code structure from https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection
     if (this.x < player.x + player.width &&
@@ -40,7 +40,7 @@ class Enemy {
 
 class Player {
   constructor(sprite) {
-    this.x = 202.5;
+    this.x = 202.5; // middle of displayed canvas width and middle of square, found by trial and error
     this.y = 400;
     this.speed = 101;
     this.sprite = sprite;
@@ -65,9 +65,11 @@ class Player {
     // scenario -- > player reaches water // alert and reset
     else if (this.y + this.height < 20) {
 
-      setTimeout(function(){alert('Congratulations, you won!'); }, 80);
+      setTimeout(function() {
+        alert('Congratulations, you won!');
+      }, 80);
       resetGame();
-      }
+    }
   }
 
 
@@ -105,7 +107,7 @@ let allEnemies = [
   // new Enemy(55), //potential to add morre bugs for difficulty
   new Enemy(140),
   new Enemy(225),
-  new Enemy(310)
+  // new Enemy(310) //no enemy on lawn, project feedback
 ];
 
 
@@ -134,9 +136,10 @@ function resetGame() {
   player.x = 202.5;
   player.y = 400;
 
-  setTimeout(function(){
+  setTimeout(function() {
     allEnemies.forEach(function(enemy) {
-    enemy.x = -100;
-    enemy.speed = Math.random() * (420 - 70) + 70;
-  });}, 100);
+      enemy.x = -100;
+      enemy.speed = Math.random() * (420 - 70) + 70;
+    });
+  }, 100);
 }
